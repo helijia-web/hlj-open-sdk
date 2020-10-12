@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "河狸家 open sdk",
   "main": "index.js",
+  "scripts": {
+    "build:rollup": "father build --esm rollup",
+    "build:babel": "father build --esm babel",
+    "build": "yarn build:babel && yarn build:rollup"
+  },
   "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
   "license": "MIT",
   "private": false,
+  "sideEffects": false,
   "dependencies": {
     "core-js": "^3",
     "es6-promise": "^4",
     "query-string": "^4"
+  },
+  "devDependencies": {
+    "father": "^2.29.10"
   }
 }
