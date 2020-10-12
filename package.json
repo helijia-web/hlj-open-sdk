@@ -1,0 +1,9 @@
+{
+  "name": "hlj-open-sdk",
+  "version": "1.0.0",
+  "description": "河狸家 open sdk",
+  "main": "index.js",
+  "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
+  "license": "MIT",
+  "private": false
+}
