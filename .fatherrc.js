@@ -1,8 +1,4 @@
 export default {
-  entry: [
-    'src/loadScript',
-    'src/env'
-  ],
   esm: {
     minify: true
   },
