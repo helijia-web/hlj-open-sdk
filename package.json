@@ -5,5 +5,10 @@
   "main": "index.js",
   "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "core-js": "^3",
+    "es6-promise": "^4",
+    "query-string": "^4"
+  }
 }
