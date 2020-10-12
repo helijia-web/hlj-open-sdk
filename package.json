@@ -6,7 +6,9 @@
   "scripts": {
     "build:rollup": "father build --esm rollup",
     "build:babel": "father build --esm babel",
-    "build": "yarn build:babel && yarn build:rollup"
+    "build": "yarn build:babel && yarn build:rollup",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy"
   },
   "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
   "license": "MIT",
