@@ -1,6 +1,6 @@
 export default {
   entry: [
-    'src/loadScript.js',
+    'src/loadScript',
     'src/env'
   ],
   esm: {
