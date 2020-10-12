@@ -2,7 +2,14 @@
   "name": "hlj-open-sdk",
   "version": "1.0.0",
   "description": "河狸家 open sdk",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "unpkg": "dist/index.js",
+  "module": "es/index.js",
+  "files": [
+    "dist",
+    "es",
+    "src"
+  ],
   "scripts": {
     "build:rollup": "father build --esm rollup",
     "build:babel": "father build --esm babel",
