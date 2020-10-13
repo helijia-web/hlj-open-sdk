@@ -1,6 +1,6 @@
 {
   "name": "hlj-open-sdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "河狸家 open sdk",
   "main": "dist/app.js",
   "unpkg": "dist/app.js",
@@ -14,10 +14,16 @@
   "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
   "license": "MIT",
   "private": false,
+  "peerDependencies": {
+    "react": ">=15.0.0 || ^16.0.0",
+    "react-dom": ">=15.0.0 || ^16.0.0"
+  },
   "devDependencies": {
-    "@hlj/ajax": "^1.4.0",
-    "@hlj/hljurl": "^1.19.3",
+    "@hlj/ajax": "^1",
+    "@hlj/hljurl": "^1",
+    "@hlj/share": "^1",
     "@hlj/webpack-config": "^5.2.0",
+    "@hlj/widget": "^3",
     "typescript": "^4.0.3",
     "webpack": "^4",
     "webpack-cli": "^4.0.0",
