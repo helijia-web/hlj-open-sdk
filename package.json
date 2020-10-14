@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rmraf dist",
+    "clean": "rimraf dist",
     "start": "webpack --watch-stdin --progress --color",
     "build": "NODE_ENV=production webpack",
     "analyze": "ANALYZE=1 yarn build"
@@ -22,12 +22,15 @@
     "@hlj/widget": "^3.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
-  "license": "MIT",
-  "private": false
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": "git@github.com:helijia-web/hlj-open-sdk.git"
 }
