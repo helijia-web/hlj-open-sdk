@@ -2,8 +2,8 @@
   "name": "hlj-open-sdk",
   "version": "0.0.1",
   "description": "河狸家 open sdk",
-  "main": "dist/app.js",
-  "unpkg": "dist/app.js",
+  "main": "dist/lib.js",
+  "unpkg": "dist/lib.js",
   "files": [
     "dist"
   ],

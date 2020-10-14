@@ -5,8 +5,8 @@ import track from '@hlj/track';
 import Share from '@hlj/share';
 import imgurl from '@hlj/imgurl';
 
-const trackAction = track.action;
-const trackPage = track.page;
+const trackAction = track.action.bind(track);
+const trackPage = track.page.bind(track);
 
 const setShare = shareInfo => {
   Share.props = shareInfo;
@@ -19,10 +19,17 @@ const login = (succ, opts) => Login.appLogin(succ, opts);
 
 const uploadImage = file => {
   const url = 'https://zelda.helijia.com/api/v1/file_upload';
-  return upload(file, url).then(({data}) => 
-    ({path: data}),
-    ({apiMessage}) => ({errorMessage: apiMessage})
-  )
+  return upload(file, url)
+    .then(res => {
+      if (res.success && res.file) {
+        const { path, url } = parseUrl(res.file.url);
+        return { success: true, path, url };
+      }
+      return { success: false, errorMessage: res.apiMessage || '上传失败' };
+    })
+    .catch(res => {
+      return { success: false, errorMessage: res.apiMessage || '上传失败' };
+    });
 }
 
 export {
@@ -37,4 +44,11 @@ export {
   checkLogin,
   login,
   uploadImage
+}
+
+
+function parseUrl(url) {
+  const prefix = 'https://img-ucdn-static.helijia.com/zmw'
+  const path = url.replace(prefix, '');
+  return { path, url };
 }
