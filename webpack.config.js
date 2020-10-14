@@ -6,5 +6,10 @@ module.exports = createConfig({
   externals: {
     react: 'react',
     'react-dom': 'react-dom'
+  },
+  output: {
+    library: 'hlj_open_sdk',
+    libraryTarget: 'umd',
+    filename: 'app.js'
   }
 });

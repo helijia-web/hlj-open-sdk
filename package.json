@@ -8,25 +8,26 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production webpack",
+    "clean": "rmraf dist",
+    "start": "webpack --watch-stdin --progress --color",
+    "build": "NODE_ENV=production webpack",
     "analyze": "ANALYZE=1 yarn build"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@hlj/ajax": "^1.4.0",
+    "@hlj/hljurl": "^1.19.3",
+    "@hlj/share": "^1.10.1",
+    "@hlj/webpack-config": "^5.2.0",
+    "@hlj/widget": "^3.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
   "license": "MIT",
-  "private": false,
-  "peerDependencies": {
-    "react": ">=15.0.0 || ^16.0.0",
-    "react-dom": ">=15.0.0 || ^16.0.0"
-  },
-  "devDependencies": {
-    "@hlj/ajax": "^1",
-    "@hlj/hljurl": "^1",
-    "@hlj/share": "^1",
-    "@hlj/webpack-config": "^5.2.0",
-    "@hlj/widget": "^3",
-    "typescript": "^4.0.3",
-    "webpack": "^4",
-    "webpack-cli": "^4.0.0",
-    "webpack-dev-server": "^3.11.0"
-  }
+  "private": false
 }
