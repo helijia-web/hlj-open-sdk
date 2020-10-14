@@ -29,8 +29,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "registry": "https://registry.npmjs.org"
   },
-  "repository": "git@github.com:helijia-web/hlj-open-sdk.git"
+  "repository": "git@github.com:helijia-web/hlj-open-sdk.git",
+  "license": "MIT"
 }
