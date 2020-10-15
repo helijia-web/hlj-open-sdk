@@ -1,0 +1,6 @@
+{
+  extends: '@hlj/eslint-config-base',
+  rules: {
+
+  }
+}

@@ -8,6 +8,7 @@
     "dist"
   ],
   "scripts": {
+    "lint": "eslint src",
     "clean": "rimraf dist",
     "start": "webpack --watch-stdin --progress --color",
     "build": "NODE_ENV=production webpack",
@@ -16,10 +17,14 @@
   "peerDependencies": {},
   "devDependencies": {
     "@hlj/ajax": "^1.4.0",
+    "@hlj/env": "^1.11.1-beta.1",
+    "@hlj/eslint-config-base": "^4.2.1",
     "@hlj/hljurl": "^1.19.3",
     "@hlj/share": "^1.10.1",
     "@hlj/webpack-config": "^5.2.0",
     "@hlj/widget": "^3.3.0",
+    "eslint": "^7.11.0",
+    "hlj-open-sdk": "^1.0.0-beta.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
