@@ -4,7 +4,8 @@ import Login from '@hlj/widget/Login';
 import track from '@hlj/track';
 import Share from '@hlj/share';
 import imgurl from '@hlj/imgurl';
-import env from '@hlj/env';
+import bridge from '@hlj/bridge';
+import env, { isApp } from '@hlj/env';
 import uploadImage from './uploadImage';
 
 const trackAction = track.action.bind(track);
@@ -24,6 +25,15 @@ const getPlatform = () => {
   return o && o.platform;
 };
 
+const doShare = () => {
+  if (isApp()) {
+    bridge.Share.doShare();
+    return true;
+  }
+  console.log('not support');  // eslint-disable-line
+  return false;
+};
+
 
 export {
   ajax,
@@ -37,5 +47,7 @@ export {
   checkLogin,
   login,
   uploadImage,
-  getPlatform
+  getPlatform,
+  doShare
 };
+
