@@ -16,5 +16,11 @@ module.exports = createConfig({
     library: 'hlj_open_sdk',
     libraryTarget: 'umd',
     filename: 'lib.js'
+  },
+  resolve: {
+    alias: {
+      moment: 'dayjs',
+      'es6-promise': pathUtil.join(__dirname, 'node_modules/es6-promise')
+    }
   }
 });
