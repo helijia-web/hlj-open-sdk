@@ -8,6 +8,8 @@ import bridge from '@hlj/bridge';
 import env, { isApp } from '@hlj/env';
 import uploadImage from './uploadImage';
 
+import '@hlj/widget/style/app.scss';
+
 const trackAction = track.action.bind(track);
 const trackPage = track.page.bind(track);
 
