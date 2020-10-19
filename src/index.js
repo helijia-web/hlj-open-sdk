@@ -5,7 +5,7 @@ import track from '@hlj/track';
 import Share from '@hlj/share';
 import imgurl from '@hlj/imgurl';
 import bridge from '@hlj/bridge';
-import env, { isApp } from '@hlj/env';
+import env, { isApp, isAndroid, isIos, isWeapp, UNSAFE_isAliapp } from '@hlj/env'; // eslint-disable-line
 import uploadImage from './uploadImage';
 
 import '@hlj/widget/style/app.scss';
@@ -23,8 +23,19 @@ const checkLogin = () => Login.check().then(() => true, () => false);
 const login = (succ, opts) => Login.appLogin(succ, opts);
 
 const getPlatform = () => {
-  const o = env();
-  return o && o.platform;
+  if (isAndroid()) {
+    return 'android';
+  }
+  if (isIos()) {
+    return 'ios';
+  }
+  if (isWeapp()) {
+    return 'weapp';
+  }
+  if (UNSAFE_isAliapp()) {
+    return 'aliapp';
+  }
+  return 'wap';
 };
 
 const doShare = () => {
