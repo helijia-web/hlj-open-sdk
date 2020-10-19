@@ -1,0 +1,200 @@
+@import "~@hlj/ui/style/flexbox.scss";
+
+.popup-component.login {
+  a {
+    text-decoration : none;
+    color           : #1a1a1a;
+  }
+
+  b {
+    color: #BE865D;
+    font-weight: normal;
+  }
+
+  ul, li, dl {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+  }
+
+  button {
+    background : none;
+    border     : none;
+    outline    : none;
+  }
+
+  button > *, a > * {
+    pointer-events: none;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+
+  .SVGInline {
+    line-height    : 1;
+    vertical-align : middle;
+    align-self     : center;
+    display        : inline-block !important;
+  
+    &-svg {
+      height       : auto;
+      display      : block;
+      margin-left  : auto;
+      margin-right : auto;
+    }
+  }
+  
+  input:focus {
+    outline: 0;
+  }
+  
+  input::-webkit-input-placeholder {
+    padding-left: 4px;
+  }
+  
+  .block-level {
+    display: block;
+    width: 100%;
+  }
+  
+  .muted {
+    color: #999;
+  }
+  
+  .button {
+    color      : #666;
+    background : #fff;
+    border     : 1px solid rgba(102,102,102,.3);
+  
+    &.primary {
+      color: #BE865D;
+      border-color: #BE865D;
+  
+      &.inverted {
+        color      : #fff;
+        background : #BE865D;
+        border     : 0;
+      }
+    }
+  
+    &.disabled, &[disabled] {
+      pointer-events : none;
+      background     : #fff;
+      color          : #b9b9b9;
+  
+      &.inverted {
+        background : #b9b9b9;
+        color      : #fff;
+      }
+    }
+  }
+
+  .login-container .code-login-container .input-cont .input-box,
+  .login-container .code-login-container .input-cont .input-box input[type=tel],
+  .login-container .code-login-container .input-cont .input-box input[type=text],
+  .login-container .code-login-container .pwd-container,
+  .pwd-container .pwd-input {
+    box-sizing: border-box;
+  }
+
+  section.widget > header,
+  .bar {
+    @extend %flexbox;
+    @include flex-dir(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between)
+    @include align-items(center);
+
+    line-height   : 2;
+    padding       : 0 .3rem;
+    background    : #fff;
+    color         : #999;
+    border-bottom : 1px solid #f7f7f7;
+    height        : 2.5rem;
+    position      : relative;
+
+    &.inverted {
+      background : #000;
+      color      : #fff;
+      h1 {
+        color : #fff;
+      }
+
+      .primary.button {
+        background : none;
+        border     : 0;
+      }
+
+      input[type=text] {
+        background : #383838;
+        color      : #fff;
+      }
+    }
+
+    button:first-child {
+      padding   : .5em;
+      position  : absolute;
+      top       : 50%;
+      transform : translateY(-50%);
+    }
+
+    h1 {
+      margin      : 0;
+      font-size   : 100%;
+      font-weight : normal;
+      color       : #1a1a1a;
+      flex        : 1;
+      text-align  : center;
+      align-self  : center;
+    }
+
+    input[type=text] {
+      border        : 0;
+      padding       : 0;
+      display       : inline-block;
+      border-radius : 2px;
+    }
+
+    .button {
+      border: none;
+    }
+
+    .SVGInline, .SVGInline-svg {
+      display : block;
+    }
+  }
+  :focus {
+    outline: none;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .phone-verification-form .input-box .get-check-btn {
+    background-image: linear-gradient( 135deg,#e6c470,#d2a85a);
+    background-color: #e6c470;
+    color: #fff;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body.no-scroll {
+  #app {
+    pointer-events : none;
+  }
+}
+
+html.no-scroll {
+  height   : 100%;
+  position : fixed;
+}
+
+/** animations **/
+@keyframes slide-from-bottom {
+  0% { transform: translateY(100%); }
+}

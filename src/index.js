@@ -8,7 +8,7 @@ import bridge from '@hlj/bridge';
 import env, { isApp, isAndroid, isIos, isWeapp, UNSAFE_isAliapp } from '@hlj/env'; // eslint-disable-line
 import uploadImage from './uploadImage';
 
-import '@hlj/widget/style/app.scss';
+import './styles/login.scss';
 
 const trackAction = track.action.bind(track);
 const trackPage = track.page.bind(track);
