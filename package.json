@@ -1,6 +1,6 @@
 {
   "name": "hlj-open-sdk",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "河狸家 open sdk",
   "main": "dist/lib.js",
   "unpkg": "dist/lib.js",
