@@ -1066,10 +1066,20 @@
     es6-promise "^4.2.4"
     query-string "^4.1.0"
 
-"@hlj/bridge@^1.0.3", "@hlj/bridge@^1.4.0":
+"@hlj/bridge@^1.4.0":
   version "1.4.0"
   resolved "https://npm.helijia.cn/@hlj%2fbridge/-/bridge-1.4.0.tgz#4d8fb3383689c631e9d54987d21bb5094e89f71e"
   integrity sha512-zfnD7PWJJMSVi1AkqT4ojvPU5ClNa0xrGQ+JLUTZGdF6oyJwP5b2xe8k+YewXXuTPhm1vVcdlK58C58UzlsFtw==
+  dependencies:
+    "@hlj/env" "^1.11.0"
+    compare-version "^0.1.2"
+    core-js "^3.2.1"
+    query-string "^4.1.0"
+
+"@hlj/bridge@^1.4.1":
+  version "1.4.1"
+  resolved "https://npm.helijia.cn/@hlj%2fbridge/-/bridge-1.4.1.tgz#db63813d27fd8d4a39d39a76929802eb8eaf5131"
+  integrity sha512-d8+IX07+7wNwVH47ImJYFnTd9KdMAlkvrq00UQtVeL1UguOrD5TQwIPNEGSdEWewWtCW5f6tbdHsBlJ/tIxnfA==
   dependencies:
     "@hlj/env" "^1.11.0"
     compare-version "^0.1.2"
@@ -1186,7 +1196,7 @@
     query-string "^5.1.1"
     tiny-cookie "^1.0.0"
 
-"@hlj/ui@^2":
+"@hlj/ui@^2.16.0":
   version "2.16.0"
   resolved "https://npm.helijia.cn/@hlj%2fui/-/ui-2.16.0.tgz#0ec66dcb91b2871d2237a654960f5358be43f520"
   integrity sha512-WQn437D6+FrDIf7rmJc7rDhtFk3g+oMED82cVaRZQ9dvUU1KCNj2nwziLCKyJrxV8N3nMmAA3tvPWpJSESPkhQ==
@@ -1274,14 +1284,14 @@
     "@hlj/load_script" "^1.0.0"
     core-js "^2.4.0"
 
-"@hlj/widget@^3.3.0":
-  version "3.3.0"
-  resolved "https://npm.helijia.cn/@hlj%2fwidget/-/widget-3.3.0.tgz#91abb0a1f01e45cde8696e4de30b968f7a12563d"
-  integrity sha512-orG64gHiyluyKCQHZP0j0h+S6BjvoKTbgi3UlaaSNbyf+y4Z++d98u09ugTS3ceYe5r2gteoIqs/fyY+ggcBpA==
+"@hlj/widget@^3.4.9":
+  version "3.4.9"
+  resolved "https://npm.helijia.cn/@hlj%2fwidget/-/widget-3.4.9.tgz#d360ae10751300e448a773914afc6a40c2638240"
+  integrity sha512-k0urGidh9M7Z9HHSzJ6IaFz6eqbwIC/3D3PJ98hld4OsjO1Kkxfiyv7bXCdPyu+AztaCMXc4ZeqFUZdbrWmMpQ==
   dependencies:
     "@hbetts/parse-repository-url" "^2.1.2"
     "@hlj/ajax" "^1.4.0"
-    "@hlj/bridge" "^1.0.3"
+    "@hlj/bridge" "^1.4.1"
     "@hlj/city" "^1.3.0"
     "@hlj/env" "^1.9.1"
     "@hlj/hljurl" "^1.15.4"
@@ -1289,7 +1299,7 @@
     "@hlj/load_script" "^1.0.0"
     "@hlj/security" "^1.0.0"
     "@hlj/track" "^1"
-    "@hlj/ui" "^2"
+    "@hlj/ui" "^2.16.0"
     classlist-polyfill "^1.0.3"
     classnames "^2.2.5"
     compare-versions "^3.5.1"
@@ -4992,11 +5002,6 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
-
-hlj-open-sdk@^1.0.0-beta.1:
-  version "1.0.0-beta.1"
-  resolved "https://registry.npm.taobao.org/hlj-open-sdk/download/hlj-open-sdk-1.0.0-beta.1.tgz?cache=0&sync_timestamp=1602670868617&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhlj-open-sdk%2Fdownload%2Fhlj-open-sdk-1.0.0-beta.1.tgz#56a27e1d6f0ec408ad053eca4785eeed94ad1232"
-  integrity sha1-VqJ+HW8OxAitBT7KR4Xu7ZStEjI=
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
