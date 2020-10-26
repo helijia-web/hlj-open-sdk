@@ -23,10 +23,10 @@ const checkLogin = () => Login.check().then(() => true, () => false);
 const login = (succ, opts) => Login.appLogin(succ, opts);
 
 const getPlatform = () => {
-  if (isAndroid()) {
+  if (isAndroid() && isApp()) {
     return 'android';
   }
-  if (isIos()) {
+  if (isIos() && isApp()) {
     return 'ios';
   }
   if (isWeapp()) {
