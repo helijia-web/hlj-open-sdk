@@ -98,6 +98,15 @@
     box-sizing: border-box;
   }
 
+  .phone-input {
+    font-size: 14px;
+  }
+
+  .popup-component.login .SVGInline-svg,
+  .login-tips .deal {
+    font-size: 12px;
+  }
+
   section.widget > header,
   .bar {
     @extend %flexbox;
