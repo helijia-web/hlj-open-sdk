@@ -1110,15 +1110,6 @@
     es6-promise "^4.2.6"
     query-string "^4.2.2"
 
-"@hlj/env@^1.11.1-beta.1":
-  version "1.11.1-beta.1"
-  resolved "https://npm.helijia.cn/@hlj%2fenv/-/env-1.11.1-beta.1.tgz#7595cd563b65827529369ecc1640a47c3d819373"
-  integrity sha512-F6zjQyWxQs3LZ2gxgN/UIqCINQz+91v6UppPfrVJyrxSyHzdVf5KRMWBpE35Q58ZaUDX6sDqGMOIxeO6WXve4A==
-  dependencies:
-    "@hlj/load_script" "^1.0.0"
-    es6-promise "^4.2.6"
-    query-string "^4.2.2"
-
 "@hlj/eslint-config-base@^4.2.1":
   version "4.2.1"
   resolved "https://npm.helijia.cn/@hlj%2feslint-config-base/-/eslint-config-base-4.2.1.tgz#5416a5b6017331844f0c445fde93ca27a20c34a0"
@@ -3387,14 +3378,9 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-dayjs@^1.8.15:
+dayjs@^1.8.15, dayjs@^1.9.3:
   version "1.9.3"
   resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.9.3.tgz?cache=0&sync_timestamp=1602580965878&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdayjs%2Fdownload%2Fdayjs-1.9.3.tgz#b7f94b22ad2a136a4ca02a01ab68ae893fe1a268"
-  integrity sha1-t/lLIq0qE2pMoCoBq2iuiT/homg=
-
-dayjs@^1.9.3:
-  version "1.9.3"
-  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.9.3.tgz?cache=0&sync_timestamp=1602580846229&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdayjs%2Fdownload%2Fdayjs-1.9.3.tgz#b7f94b22ad2a136a4ca02a01ab68ae893fe1a268"
   integrity sha1-t/lLIq0qE2pMoCoBq2iuiT/homg=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:

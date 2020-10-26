@@ -18,7 +18,7 @@
   "devDependencies": {
     "@hlj/ajax": "^1.4.0",
     "@hlj/bridge": "^1.4.0",
-    "@hlj/env": "^1.11.1-beta.1",
+    "@hlj/env": "^1",
     "@hlj/eslint-config-base": "^4.2.1",
     "@hlj/hljurl": "^1.19.3",
     "@hlj/share": "^1.10.1",
