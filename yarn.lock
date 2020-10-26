@@ -1066,17 +1066,7 @@
     es6-promise "^4.2.4"
     query-string "^4.1.0"
 
-"@hlj/bridge@^1.4.0":
-  version "1.4.0"
-  resolved "https://npm.helijia.cn/@hlj%2fbridge/-/bridge-1.4.0.tgz#4d8fb3383689c631e9d54987d21bb5094e89f71e"
-  integrity sha512-zfnD7PWJJMSVi1AkqT4ojvPU5ClNa0xrGQ+JLUTZGdF6oyJwP5b2xe8k+YewXXuTPhm1vVcdlK58C58UzlsFtw==
-  dependencies:
-    "@hlj/env" "^1.11.0"
-    compare-version "^0.1.2"
-    core-js "^3.2.1"
-    query-string "^4.1.0"
-
-"@hlj/bridge@^1.4.1":
+"@hlj/bridge@^1.4.0", "@hlj/bridge@^1.4.1":
   version "1.4.1"
   resolved "https://npm.helijia.cn/@hlj%2fbridge/-/bridge-1.4.1.tgz#db63813d27fd8d4a39d39a76929802eb8eaf5131"
   integrity sha512-d8+IX07+7wNwVH47ImJYFnTd9KdMAlkvrq00UQtVeL1UguOrD5TQwIPNEGSdEWewWtCW5f6tbdHsBlJ/tIxnfA==
