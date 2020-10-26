@@ -47,7 +47,7 @@ const doShare = () => {
   return false;
 };
 
-const getAppImage = type => {
+const getAppImage = ({type}) => {
   // doc: https://git.helijia.cn/npms/bridge/blob/master/src/actions.js#L85
   // type 1 拍照 2 选相册 3 拍照+选相册
   return bridge.Common.getAppImageBytes({type});
