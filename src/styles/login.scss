@@ -102,9 +102,16 @@
     font-size: 14px;
   }
 
-  .popup-component.login .SVGInline-svg,
-  .login-tips .deal {
+  .jump-right-arrow .SVGInline-svg,
+  .login-tips a {
     font-size: 12px;
+  }
+
+  .login-container .agreement-container .agreement-wrap {
+    li, p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 
   section.widget > header,
